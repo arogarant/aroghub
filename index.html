@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    
+    .MGrid {
+        border: 4px solid black;
+    }
+    
+    header {
+        text-align: center;
+        border: 4px solid black;
+    }
+    
+    .Updates {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 10vh;
+        /* height: 10vh; */
+    }
+    
+    .Updates h2 {
+        font-size: 1em;
+    }
+    
+    .movies {
+        padding: 10px;
+        width: 20vw;
+    }
+    
+    label {
+        display: block;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .movies {
+            width: 100vw;
+        }
+    }
+    
+    .MoviesTitle {
+        text-align: left;
+    }
+    
+    .new {
+        position: absolute;
+        background-color: red;
+        color: white;
+    }
+    
+    footer {
+        margin-top: 20vh;
+        text-align: center;
+        color: white;
+        background-color: black;
+        min-height: max-content;
+        padding: 5%
+    }
+    
+    .socialsContainer {
+        display: block;
+    }
+    
+    .socials {
+        width: 5vw;
+        height: 5vh;
+        filter: invert(1);
+    }
+    
+    .screenshots {
+        width: 100vw;
+        margin: 1vh;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-black bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ArogHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <!-- <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li> -->
+            <!--                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li> -->
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <header>
+        <h2>Movies</h2>
+        <small>The Entertainment is here..</small>
+    </header>
+    <div class="Updates">
+        <h2>
+            Online Streaming will be available soon...
+        </h2>
+    </div>
+    <div class="MoviesGrid">
+        <div class="MGrid">
+            <span class="new">NEW</span>
+            <!-- <video class="movies" name="KGF Chapter-2" poster="https://upload.wikimedia.org/wikipedia/en/d/d0/K.G.F_Chapter_2.jpg" src="E:\movies\KGF Chapter 2 (2022) 480p .mkv" controls></video> -->
+            <div class="poster , movies">
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/d0/K.G.F_Chapter_2.jpg" alt="">
+            </div>
+            <label for="movies"><h3>Trailer</h3></label>
+            <iframe class="movies" name="movies" src="https://www.youtube.com/embed/JKa05nyUmuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <label class="MoviesTitle" for="KGF Chapter-2"> <h2>KGF Chapter-2</h2></label>
+            <p>Release Date - 14 April 2022</p>
+            <p>Duration - 2 Hour 48 Min</p>
+            <details title="KGF Chapter-2">
+                K.G.F: Chapter 2 is a 2022 Indian Kannada-language period action film written and directed by Prashanth Neel, and produced by Vijay Kiragandur under the banner Hombale Films. It is the second instalment in a two-part series, sequel to the 2018 film K.G.F:
+                Chapter 1. The film stars Yash, Sanjay Dutt, Srinidhi Shetty, Raveena Tandon and Prakash Raj. It follows the assassin Rocky, who, after establishing himself as the kingpin of the Kolar Gold Fields, must retain his supremacy against adversaries
+                and government officials, while also coming to terms with his past.
+            </details>
+            <a href="https://drivehub.ws/file/2487951834">
+                <button class="btn btn-primary btn-user">
+                Download | 720p
+            </button>
+            </a>
+            <div class="screenshotsGrid">
+                <h3>Screen Shots</h3>
+                <img class="screenshots" src="https://myimg.bid/images/2022/04/14/vlcsnap-2022-04-13-21h42m20s761.md.jpg" alt="">
+                <img class="screenshots" src="https://myimg.bid/images/2022/04/14/vlcsnap-2022-04-13-21h42m43s773.md.jpg" alt="">
+                <img class="screenshots" src="https://myimg.bid/images/2022/04/14/vlcsnap-2022-04-13-21h45m45s826.md.jpg" alt="">
+                <img class="screenshots" src="https://myimg.bid/images/2022/04/14/vlcsnap-2022-04-13-21h50m35s680.md.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>All rights reserved to Aroghub</p>
+        <p>Contact Us - developerayu@gmail.com</p>
+        <div class="socialsContainer">
+            <a href=""><img class="instagramLogo , socials" src="../socials/instagramLogo.svg" alt=""></a>
+            <a href=""><img class="github , socials" src="../socials/github.svg" alt=""></a>
+            <a href=""><img class="linkedin-brands , socials" src="../socials/linkedin-brands.svg" alt=""></a>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</html>
